@@ -7,15 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUJALANG</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@300;400&family=Gamja+Flower&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@200&family=Roboto+Condensed:ital,wght@0,300;1,400&family=Single+Day&family=Song+Myung&family=Stylish&family=Yeon+Sung&display=swap"
         rel="stylesheet">
+        <link href="css/slide_autoplay.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/swiper.css">
+
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+	</head>
 </head>
+
 <body>
- <div id="header_wrap">
+
+    <div id="header_wrap">
         <!--header_wrap_S-->
         <div class="header">
             <!--header_S-->
@@ -31,6 +39,7 @@
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Event</a></li>
             </ul>
+
         </div>
     </div>
     <!--header_E-->
@@ -186,7 +195,7 @@
                             <h2 class="p_name">YUJA JAM</h2>
                             <p class="p_capaticy">350 g</p>
                             <p class="p_price">10,000 원</p>
-                            <p class="b_detail"><img src="/image/button_detail.png" alt=""></p>
+                            <p class="b_detail"><img src="image/button_detail.png" alt=""></p>
                         </div>
                     </div>
                     <div class="p_jam">
@@ -205,7 +214,7 @@
                             <h2 class="p_name">YUJA CHOCOLATE</h2>
                             <p class="p_capaticy">100 g</p>
                             <p class="p_price">10,000 원</p>
-                            <p class="b_detail"><img src="/image/button_detail.png" alt=""></p>
+                            <p class="b_detail"><img src="image/button_detail.png" alt=""></p>
                         </div>
                     </div>
                     <div class="p_chocolate">
@@ -217,12 +226,43 @@
             <!--05yuja_tea_E-->
         </div>
     </div>
-    <div id="event_banner_wrap">
         <!--event_banner_S/h:430px-->
         <div class="event_banner">
-            <img src="image/evet_banner_01.png" alt="">
+            <div id="banner">
+                <!-- Swiper -->
+                     <div class="swiper-container">
+                       <div class="swiper-wrapper" style="max-width:100%;">
+                         <div class="swiper-slide"><a href="#"><img src="image/event-banner_01.png" alt="배너1"></a></div>
+                         <div class="swiper-slide"><a href="#"><img src="image/event-banner_02.png" alt="배너2"></a></div>
+                         <div class="swiper-slide"><a href="#"><img src="image/event-banner_03.png" alt="배너3"></a></div>
+                       </div>
+                       <!-- 화살표 버튼 -->
+                       <div class="swiper-button-next"></div>
+                       <div class="swiper-button-prev"></div>
+                       <!-- 블릿 버튼 -->
+                       <div class="swiper-pagination"></div>
+                     </div>
+       
+                    <script>
+                    var swiper = new Swiper('.swiper-container', {
+                     autoplay: {
+                       delay: 2500,//슬라이드 넘어가는 시간
+                       disableOnInteraction: false,
+                     },
+                     loop: true,//슬라이드 무한반복
+                     navigation: {//화살표 버튼
+                       nextEl: '.swiper-button-next',
+                       prevEl: '.swiper-button-prev',
+                     },
+                       pagination: {//블릿 버튼
+                       el: '.swiper-pagination',
+                       clickable: true,
+                     },
+                   });
+                 </script>
+           </div><!--main_banner e-->
         </div>
-    </div>
+    
     <div id="about">
         <!--about_S/h:1540px-->
         <div class="category_wrap">
@@ -238,6 +278,7 @@
             <!--w:1180px/h:400px-->
             <li class="a_box01_image">
                 <!--w:500px/h:400px-->
+
             </li>
             <li class="a_box01_text">
                 <!--w:680px/h:300px-->
@@ -284,16 +325,21 @@
             </li>
         </ul>
     </div>
+
     </div>
     </div>
     <div id="footer_wrap">
         <!--footer_S/height:240px-->
+
         <h1 class=><img src="image/footer_logo(gray).png" alt=""></h1>
         <p>
             유자랑 농원<br>
             경상남도 거제시 도광면 강도리 241<br>
             TEL : 055-5124-0526 FAX:055-5124-0526<br>
         </p>
+
     </div>
+
 </body>
+
 </html>

@@ -461,15 +461,11 @@ a {
     transition: transform 2s;
 }
 /*event_banner*/
-#event_banner_wrap{
-    height: 430px;
-    background-color: #ffcc66;
-    margin: 100px 0;
-}
+
 .event_banner{
     width: 1920px;
     height: 430px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 .event_banner img{
     width: 100%;
