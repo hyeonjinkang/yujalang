@@ -480,7 +480,7 @@ display: none;
 }
 .box_oil_wrap:hover .caption_oil{
     transform: translateY(0px);
-    transition: transform 2s;
+    transition: transform 1s;
 }
 /*03yuja_tea*/
 .box_tea_wrap{
@@ -518,7 +518,7 @@ display: none;
 }
 .box_tea_wrap:hover .caption_tea{
     transform: translateY(0px);
-    transition: transform 2s;
+    transition: transform 1s;
 }
 /*04yuja_chocolate*/
 .box_chocolate_wrap{
@@ -558,7 +558,7 @@ display: none;
     color: #03951b;}
 .box_chocolate_wrap:hover .caption_chocolate{
     transform: translateY(0px);
-    transition: transform 2s;
+    transition: transform 1s;
 }
 /*05yuja_Jam*/
 .box_jam_wrap{
@@ -598,7 +598,7 @@ display: none;
     color: #f56708;}
 .box_jam_wrap:hover .caption_jam{
     transform: translateY(0px);
-    transition: transform 2s;
+    transition: transform 1s;
 }
 /*pc*/
 @media (min-width:700px){
