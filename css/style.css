@@ -716,6 +716,18 @@ display: none;
     .event_banner{
         display: none;
     }
+    #m_event_wrap{
+        width: 390px;
+        height: 1500px;/*수정*/
+    }
+    #m_event_wrap li{
+        width: 390px;
+        height: 300px;
+    }
+    .m_event-banner{
+        width: 390px;
+        width: 254;
+    }
     .bold{
         font-weight: 600;
     }
