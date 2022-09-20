@@ -671,9 +671,9 @@ display: none;
 }
 /*pc*/
 @media (min-width:700px){
-    #m_event_banner_e{
-        display: none;
-    }
+  #m_event_banner{
+    display: none;
+  }
 }
 /*mobile*/
 @media (max-width:699px){
@@ -683,7 +683,7 @@ display: none;
     #m_event_banner{
         width: 390px;
     }
-    .m_event_wrap{
+    .m_e_box_wrap{
         width: 390px;
     }
     .m_e_box{
