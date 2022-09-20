@@ -136,10 +136,15 @@ a {
     list-style: none;
     padding: 20px 20px;   
 }
+.menu_wrap li{
+    margin-bottom: 45px;
+}
 .menu_wrap li a{
-    color: #fff;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
     text-decoration: none;
-    padding: 20px 0;
+
 }    
 }
 /*banner*/
@@ -339,7 +344,7 @@ display: none;
     }
     #m_experience{
         width: 390px;
-        height: 960px;/*수정*/
+        /*수정*/
         box-sizing: border-box;
     }
     .m_category_wrap{
@@ -356,6 +361,16 @@ display: none;
         display: inline-block;
         margin-top: 30px;
     }
+    .m_category_wrap_e{
+        width: 390px;
+        height: 100px;
+        text-align: center;
+        margin: 50px 0;
+    }
+    .m_category_wrap_e .line{
+        display: inline-block;
+    }
+    
     .m_experience_images{
         width: 390px;
         height: 307px;
@@ -566,6 +581,7 @@ display: none;
         width: 390px;
         
         margin: 50px 0;
+        padding: 10px 0;
         box-sizing: border-box;
         background-color: #F5F5F5;
     }
@@ -650,11 +666,12 @@ display: none;
     }    
 }
 /*event_banner*/
-
-
+#event_banner{
+    margin: 100px 0;
+}
 /*pc*/
 @media (min-width:700px){
-    #m_event_wrap{
+    #m_event_banner_e{
         display: none;
     }
 }
@@ -663,18 +680,21 @@ display: none;
     #event_banner{
         display: none;
     }
-    #m_event_wrap{
+    #m_event_banner{
         width: 390px;
-        height: 254;
     }
-    #m_event_wrap li{
+    .m_event_wrap{
         width: 390px;
-        height: 300px;
     }
-    
-    .bold{
-        font-weight: 600;
+    .m_e_box{
+        width: 390px;
+        height: 254px;
+        margin-bottom: 10px;
     }
+    .m_e_banner{
+        display: block;
+    }
+
 }
 /*about*/
 #about{
@@ -692,6 +712,7 @@ display: none;
     box-sizing: border-box;
     z-index: 50;
 }
+
 /*a_box01*/
 .a_box01{
     width: 1180px;
@@ -799,7 +820,7 @@ display: none;
     }
     #m_about{
         width: 390px;
-        height: 1960px;/*수정*/
+        
         margin-bottom: 100px;
     }
     .m_a_box{
