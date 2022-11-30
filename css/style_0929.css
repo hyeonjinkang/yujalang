@@ -44,11 +44,15 @@ a {
 .util li a {
     font-size: 13px;
     display: block;
+    padding: 0 10px;
 }
-
+.util li a:hover{
+    background-color: #4274ab;
+    color: #ffffff;
+}
 #gnb {
     float: right;
-    padding-top: 90px;
+    padding-top: 92px;
 }
 #gnb li {
     float: left;
@@ -61,6 +65,10 @@ a {
     font-size: 16px;
     font-weight: 700;
     padding: 5px 40PX 12px;
+}
+#gnb li a:hover{
+    background-color: #ffcc66;
+    color: #ffffff;
 }
 /*pc*/
 @media (min-width:1320px){
